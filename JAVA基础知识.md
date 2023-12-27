@@ -6,15 +6,15 @@ Java程序中支持书写二进制、八进制、十六进制的数据，分别�
 
 ### 1.数据类型分类
 
-![](E:\projectwork\java_images\1.png)
+![](.\images\1.png)
 
 ### 2.Java关键字
 
-![](E:\projectwork\java_images\QQ截图20221018212147.png)
+![](.\images\QQ截图20221018212147.png)
 
 ### 3.java命名规则
 
-![](E:\projectwork\java_images\3.png)
+![](.\images\3.png)
 
 ## 二、基础部分
 
@@ -27,7 +27,7 @@ byte a = 20;
 int b = a;
 ```
 
-![](E:\projectwork\java_images\4.png)
+![](.\images\4.png)
 
 2.表达式的自动类型转换
 
@@ -193,7 +193,7 @@ Java内存分配：分为栈、堆、方法区、本地方法栈、寄存器
 
 堆内存：new出来的东西会在这块内存中开辟空间并产生地址
 
-![](D:\mybatis笔记\QQ截图20221118114601.png)
+![](.\images\QQ截图20221118114601.png)
 
 ### 4.5Debug工具的使用
 
@@ -306,7 +306,7 @@ public static int getArrayMaxData(int[] arrs){
 - 方法没有被调用的时候，在方法区中的字节码文件中存放。
 - 方法被调用的时候，需要进入到栈内存中运行。
 
-![](D:\mybatis笔记\images\2022-11-18.png)
+![](.\images\2022-11-18.png)
 
 ### 5.5方法的参数传递机制
 
@@ -321,11 +321,11 @@ Java的参数传递机制：**值传递**
 - 实参：如在方法内部定义的变量
 - 形参：如在定义方法时，"()"中所声明的参数
 
-![](D:\mybatis笔记\images\2022-11-18 (1).png)
+![](.\images\2022-11-18 (1).png)
 
 #### 5.5.2引用类型的参数传递
 
-![引用](D:\mybatis笔记\images\2022-11-18 (2).png)
+![引用](.\images\2022-11-18 (2).png)
 
 ### 5.6方法的参数传递案例
 
@@ -768,7 +768,7 @@ public class work01 {
 - 一个Java文件中可以定义多个class类，但只能一个类是public修饰，而且public修饰的类名必须称为代码文件名，**实际开发建议一个文件定义一个class类。**
 - 成员变量的完整定义格式为：**修饰符 数据类型 变量名称=初始化值**；一般无需指定初始化值，存在默认值。
 
-![](D:\mybatis笔记\images\2022-11-22.png)
+![](.\images\2022-11-22.png)
 
 ### 7.3面向对象：内存机制
 
@@ -776,13 +776,13 @@ public class work01 {
 
 **多个对象的内存图**
 
-![](D:\mybatis笔记\images\QQ图片20221122145646.png)
+![](.\images\QQ图片20221122145646.png)
 
-![](D:\mybatis笔记\images\QQ截图20221122150236.png)
+![](.\images\QQ截图20221122150236.png)
 
 **两个变量指向同一个对象内存图**
 
-![](D:\mybatis笔记\images\QQ截图20221122151725.png)
+![](.\images\QQ截图20221122151725.png)
 
 **垃圾回收**
 
@@ -1137,9 +1137,9 @@ name +="教育";  //输出是传智教育  （运算出来的，在堆内存中�
 - String变量每次的修改其实都是产生并指向了**新的字符串对象**。
 - 原来的字符串对象都是没有改变的，所以称不可变字符串。
 
-![](D:\mybatis笔记\images\QQ截图20221123202737.png)
+![](.\images\QQ截图20221123202737.png)
 
-![](D:\mybatis笔记\images\QQ截图20221123203042.png)
+![](.\images\QQ截图20221123203042.png)
 
 ### 8.1.2String类创建对象的两种方式
 
@@ -1148,7 +1148,7 @@ name +="教育";  //输出是传智教育  （运算出来的，在堆内存中�
 - 直接使用""定义
 - 通过String类的构造器来创建对象
 
-![](D:\mybatis笔记\images\QQ截图20221123203530.png)
+![](.\images\QQ截图20221123203530.png)
 
 ```java
 ![QQ截图20221123205104](D:\mybatis笔记\images\QQ截图20221123205104.png)public class StringDemo {
@@ -1180,9 +1180,9 @@ name +="教育";  //输出是传智教育  （运算出来的，在堆内存中�
 - 以""方式给出的字符串对象，在字符串常量池中存储，而且相同内容只会在其中存储一份。
 - 通过构造器new对象，每new一次都会产生一个新对象，放在堆内存中
 
-![](D:\mybatis笔记\images\QQ截图20221123205104.png)
+![](.\images\QQ截图20221123205104.png)
 
-![](D:\mybatis笔记\images\QQ截图20221123205245.png)
+![](.\images\QQ截图20221123205245.png)
 
 **字符串对象特点：**
 
@@ -1191,17 +1191,17 @@ name +="教育";  //输出是传智教育  （运算出来的，在堆内存中�
 
 ### 8.1.3String类常见的面试题
 
-![](D:\mybatis笔记\images\QQ截图20221123210419.png)
+![](.\images\QQ截图20221123210419.png)
 
 因为""创建出来的放在字符串常量池，而new出来的放在堆内存中，所以第一行会创建出两个对象出来，而第二行没有创建对象，因为直接指向字符串常量池中的abc。
 
 结果为false：s2结果指向堆内存，而s1结果指向常量池。
 
-![](D:\mybatis笔记\images\QQ截图20221123210852.png)
+![](.\images\QQ截图20221123210852.png)
 
 结果为false，地址不一样，s1指向字符串常量池中的abc，而s3指向堆内存中的abc
 
-![](D:\mybatis笔记\images\QQ截图20221123210936.png)
+![](.\images\QQ截图20221123210936.png)
 
 结果为true(java存在编译优化机制，程序在编译时："a"+"b"+"c"会直接转成"abc")
 
@@ -1211,7 +1211,7 @@ name +="教育";  //输出是传智教育  （运算出来的，在堆内存中�
 
 - 推荐使用String类提供的"equals"比较：只关心内容一样即可
 
-![](D:\mybatis笔记\images\QQ截图20221123212253.png)
+![](.\images\QQ截图20221123212253.png)
 
 ```java
 public class StringEqualsDemo3 {
@@ -1240,7 +1240,7 @@ public class StringEqualsDemo3 {
 
 ### 8.1.5String类常用API-遍历、替换、截取、分割操作
 
-![](D:\mybatis笔记\images\QQ截图20221123213224.png)
+![](.\images\QQ截图20221123213224.png)
 
 ```java
 public class StringAPIDemo4 {
@@ -1408,7 +1408,7 @@ System.out.println(arrayList1);
 
 ### 8.2.4ArrayList常用API、遍历
 
-![](D:\mybatis笔记\images\QQ截图20221124150857.png)
+![](.\images\QQ截图20221124150857.png)
 
 ```java
 System.out.println(arrayList1.get(1)); //根据索引查找元素
@@ -1947,7 +1947,7 @@ public class ATMSystem {
 
 
 
-![](D:\mybatis笔记\images\j1.png)
+![](.\images\j1.png)
 
 成员变量分为两类：
 
@@ -1958,7 +1958,7 @@ public class ATMSystem {
 
 在加载类的时候，类的静态变量会在堆内存中加载在类静态变量区中。
 
-![](D:\mybatis笔记\images\j2.png)
+![](.\images\j2.png)
 
 #### 9.1.3static修饰成员方法的基本用法
 
